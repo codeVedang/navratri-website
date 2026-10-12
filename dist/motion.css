@@ -82,3 +82,9 @@ nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+/* Official artwork replaces the provisional text wordmark. Only outer yellow space is trimmed. */
+.brand { flex-shrink: 0; }
+.brand .brand-logo { display: block; width: 144px; height: 88px; object-fit: cover; object-position: center; border-radius: 6px; }
+footer .brand .brand-logo { width: 176px; height: 108px; }
+@media (max-width: 800px) { header .brand .brand-logo { width: 112px; height: 70px; } }
+@media (max-width: 360px) { header .brand .brand-logo { width: 96px; height: 60px; } }
