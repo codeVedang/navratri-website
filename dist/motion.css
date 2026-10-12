@@ -88,3 +88,42 @@ nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); }
 footer .brand .brand-logo { width: 176px; height: 108px; }
 @media (max-width: 800px) { header .brand .brand-logo { width: 112px; height: 70px; } }
 @media (max-width: 360px) { header .brand .brand-logo { width: 96px; height: 60px; } }
+/* Put event identity, practical details and booking choices first. */
+.hero { padding-top: 42px; }
+.hero-copy { padding-top: 25px; }
+.hero h1 { font-size: clamp(58px, 6.3vw, 90px); line-height: 1.04; letter-spacing: -2px; margin-bottom: 22px; }
+.hero h1 em { font-size: .82em; white-space: normal; }
+.hero .intro { font-size: 14px; max-width: 510px; line-height: 1.8; margin-bottom: 26px; }
+.hero-details { margin: 0 0 28px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); gap: 32px; }
+.hero-details strong { font-size: 13px; }
+.hero-details small { font-size: 11px; }
+.hero-details small:first-child { letter-spacing: 1.8px; font-size: 8px; color: var(--gold); margin-bottom: 4px; }
+.hero-actions { flex-direction: row; align-items: center; gap: 26px; }
+.hero-actions .button { min-width: 160px; font-size: 13px; }
+.hero-actions .text-link { font-size: 12px; }
+.hero-booking-note { font-size: 10px; color: var(--muted); margin: 14px 0 0; max-width: 410px; }
+.hero-art { min-height: 490px; }
+@media (min-width: 1500px) { .hero-art { min-height: 550px; } }
+@media (max-width: 800px) { .hero-details { flex-direction: column; gap: 15px; } .hero-actions { flex-wrap: wrap; gap: 16px; } }
+@media (max-width: 580px) {
+  .hero { padding-top: 18px; }
+  .hero-copy { padding-top: 16px; padding-bottom: 0; }
+  .hero h1 { font-size: 57px; line-height: 1.02; margin-bottom: 18px; }
+  .hero .intro { font-size: 12px; margin-bottom: 20px; }
+  .hero .intro br { display: none; }
+  .hero-details { flex-direction: row; justify-content: space-between; padding: 16px 0; gap: 10px; margin-bottom: 22px; }
+  .hero-details strong { font-size: 11px; }
+  .hero-details small { font-size: 9px; }
+  .hero-details .detail-icon { font-size: 21px; }
+  .hero-actions { flex-wrap: nowrap; gap: 20px; }
+  .hero-actions .button { min-width: 130px; font-size: 12px; }
+  .hero-actions .text-link { font-size: 11px; }
+  .hero-booking-note { font-size: 9px; line-height: 1.65; }
+  .hero-art { min-height: 0; height: 320px; margin-top: 30px; }
+  .hero-art:has(.hero-logo) .art-caption { bottom: 16px; }
+  .hero-art:has(.hero-logo) .art-caption em { font-size: 25px; }
+  .hero-art .art-caption span { font-size: 7px; margin-bottom: 4px; }
+  .round-seal { width: 78px; height: 78px; top: 26px; gap: 8px; }
+  .round-seal strong { font-size: 18px; }
+  .round-seal span { font-size: 4px; }
+}
