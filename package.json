@@ -1,0 +1,1 @@
+{"name":"legend-navratri-utsav","private":true,"version":"1.0.0","scripts":{"dev":"node server.cjs","start":"node server.cjs","check":"node --check dist/app.js"}}
